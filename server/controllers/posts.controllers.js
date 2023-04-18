@@ -2,6 +2,7 @@ import Post from "../models/Post.js";
 import { uploadImage, deleteImage } from "../Library/cloudinary.js";
 import fs from "fs-extra";
 
+
 export const getPosts = async (req,res) => {
     try {
         const posts = await Post.find()
